@@ -1,3 +1,6 @@
+[Diagnostics.CodeAnalysis.SuppressMessageAttribute('PSUseDeclaredVarsMoreThanAssignments', '', Justification = 'Variables set in BeforeAll are used in the It blocks')]
+param()
+
 BeforeAll {
     $root = Split-Path -Parent $PSScriptRoot
     Import-Module (Join-Path $root 'src/TokenAnatomy.psd1') -Force
