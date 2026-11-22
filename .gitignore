@@ -1,0 +1,10 @@
+# Real tokens and SAML responses captured during the labs
+captures/
+*.capture.*
+*.local.*
+
+# Editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

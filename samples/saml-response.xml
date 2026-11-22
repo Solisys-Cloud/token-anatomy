@@ -1,0 +1,24 @@
+<samlp:Response xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol" ID="_r1d2e3" Version="2.0" IssueInstant="2026-11-20T09:00:00Z" Destination="https://app.contoso.com/saml/acs" InResponseTo="_req123">
+  <Issuer xmlns="urn:oasis:names:tc:SAML:2.0:assertion">https://sts.windows.net/00000000-0000-0000-0000-000000000000/</Issuer>
+  <samlp:Status><samlp:StatusCode Value="urn:oasis:names:tc:SAML:2.0:status:Success"/></samlp:Status>
+  <Assertion xmlns="urn:oasis:names:tc:SAML:2.0:assertion" ID="_a1b2c3" IssueInstant="2026-11-20T09:00:00Z" Version="2.0">
+    <Issuer>https://sts.windows.net/00000000-0000-0000-0000-000000000000/</Issuer>
+    <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+      <SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/><Reference URI="#_a1b2c3"><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><DigestValue>U0FNUExFLURJR0VTVA==</DigestValue></Reference></SignedInfo>
+      <SignatureValue>U0FNUExFLVNJR05BVFVSRS1OT1QtVkFMSUQ=</SignatureValue>
+    </Signature>
+    <Subject>
+      <NameID Format="urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress">alice@contoso.com</NameID>
+      <SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:bearer"><SubjectConfirmationData InResponseTo="_req123" NotOnOrAfter="2026-11-20T09:05:00Z" Recipient="https://app.contoso.com/saml/acs"/></SubjectConfirmation>
+    </Subject>
+    <Conditions NotBefore="2026-11-20T08:55:00Z" NotOnOrAfter="2026-11-20T10:00:00Z">
+      <AudienceRestriction><Audience>https://app.contoso.com/saml</Audience></AudienceRestriction>
+    </Conditions>
+    <AttributeStatement>
+      <Attribute Name="http://schemas.microsoft.com/identity/claims/displayname"><AttributeValue>Alice Martin</AttributeValue></Attribute>
+      <Attribute Name="http://schemas.microsoft.com/ws/2008/06/identity/claims/role"><AttributeValue>Finance.Approver</AttributeValue></Attribute>
+      <Attribute Name="http://schemas.microsoft.com/ws/2008/06/identity/claims/groups"><AttributeValue>cccccccc-0000-0000-0000-000000000003</AttributeValue><AttributeValue>dddddddd-0000-0000-0000-000000000004</AttributeValue></Attribute>
+    </AttributeStatement>
+    <AuthnStatement AuthnInstant="2026-11-20T08:59:58Z" SessionIndex="_s1"><AuthnContext><AuthnContextClassRef>urn:oasis:names:tc:SAML:2.0:ac:classes:Password</AuthnContextClassRef></AuthnContext></AuthnStatement>
+  </Assertion>
+</samlp:Response>
