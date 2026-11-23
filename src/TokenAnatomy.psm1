@@ -1,3 +1,8 @@
+<#
+    Written by Olivier Lumeau
+    https://github.com/Solisys-Cloud/token-anatomy
+#>
+
 Set-StrictMode -Version Latest
 
 # Well-known identifiers of the Microsoft Graph resource.

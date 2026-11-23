@@ -1,3 +1,8 @@
+<#
+    Written by Olivier Lumeau
+    https://github.com/Solisys-Cloud/token-anatomy
+#>
+
 [Diagnostics.CodeAnalysis.SuppressMessageAttribute('PSUseDeclaredVarsMoreThanAssignments', '', Justification = 'Variables set in BeforeAll are used in the It blocks')]
 param()
 

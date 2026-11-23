@@ -38,6 +38,10 @@ How long to wait for the browser sign-in. Default: 180.
 .EXAMPLE
 $tokens = ./scripts/Invoke-OidcSignIn.ps1 -TenantId contoso.onmicrosoft.com -ClientId 11111111-2222-3333-4444-555555555555
 $tokens.IdToken, $tokens.AccessToken | Get-TokenAnatomy | Format-List
+
+.NOTES
+    Written by Olivier Lumeau
+    https://github.com/Solisys-Cloud/token-anatomy
 #>
 [CmdletBinding()]
 param(

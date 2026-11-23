@@ -1,3 +1,8 @@
+<#
+    Written by Olivier Lumeau
+    https://github.com/Solisys-Cloud/token-anatomy
+#>
+
 @{
     RootModule        = 'TokenAnatomy.psm1'
     ModuleVersion     = '1.0.0'
